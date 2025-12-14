@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คู่มือการใช้งาน</title>
+    
+    <style>
+        /* ตั้งค่าพื้นฐานและฟอนต์ */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5; /* สีพื้นหลังอ่อนๆ */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh; /* ให้เต็มความสูงจอ */
+        }
+
+        /* ส่วนหัวเรื่อง (Header) */
+        .header {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            margin: 0;
+            color: #1a73e8; /* สีน้ำเงินสดใส */
+            font-size: 2.5em;
+            font-weight: 600;
+        }
+
+        /* จัดวางตัวเลือกให้อยู่กึ่งกลางจอและแบ่งซ้ายขวา */
+        .options-container {
+            display: flex;
+            justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+            align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+            flex-grow: 1; /* ใช้พื้นที่ที่เหลือทั้งหมด */
+            width: 80%; /* ความกว้างของพื้นที่ตัวเลือก */
+            max-width: 1000px;
+        }
+
+        /* สไตล์ของแต่ละตัวเลือก (Card Style) */
+        .option-link {
+            text-decoration: none;
+            color: inherit;
+            margin: 0 20px;
+            flex: 1; /* แบ่งพื้นที่เท่าๆ กัน */
+            max-width: 400px;
+        }
+
+        .option-card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* เงาเข้มขึ้นเล็กน้อย */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Hover Effect: เมื่อเมาส์ชี้ */
+        .option-card:hover {
+            transform: translateY(-10px); /* เลื่อนขึ้นเล็กน้อย */
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* เงาเข้มขึ้น */
+            background-color: #e3f2fd; /* สีพื้นหลังอ่อนลงเมื่อชี้ */
+        }
+        
+        .option-card h2 {
+            font-size: 1.8em;
+            color: #1a73e8;
+            margin-top: 15px;
+        }
+
+        .icon {
+            font-size: 3em;
+            color: #1a73e8;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>คู่มือการใช้งาน</h1>
+    </header>
+
+    <div class="options-container">
+        
+        <a href="document1.pdf" target="_blank" class="option-link">
+            <div class="option-card">
+                <span class="icon">📘</span>
+                <h2>คู่มือ</h2>
+            </div>
+        </a>
+
+        <a href="document2.pdf" target="_blank" class="option-link">
+            <div class="option-card">
+                <span class="icon">📘</span>
+                <h2>Manual</h2>
+            </div>
+        </a>
+
+    </div>
+
+</body>
+</html>
